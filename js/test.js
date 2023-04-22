@@ -8,10 +8,9 @@
   // Initialize Firebase
   var telegramBotToken;
   var chatId;
-  var myElement = document.getElementById("abc");
   // Lấy dữ liệu từ Firebase Realtime Database
   database.ref('/data').once('value').then(function(snapshot) {
-    myElement = document.getElementById("abc");
+    var myElement = document.getElementById("abc");
 
     var data = snapshot.val();
     myElement.textContent = data.TEXT1;
@@ -19,9 +18,6 @@
     chatId = data.TelegramId;
     database.goOffline();
     // Đặt nội dung vào phần tử HTML
-  });
-  myElement.scrollIntoView({ 
-    behavior: 'smooth' 
   });
 document.getElementById('submitTele').addEventListener('click', () => {
   const data = {
