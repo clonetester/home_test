@@ -17,7 +17,7 @@
     // Đặt nội dung vào phần tử HTML
   });
 
-const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
+const telegramBotToken = "$TELEGRAM_BOT_TOKEN";
 const chatId = '1811845009';
 document.getElementById('submitTele').addEventListener('click', () => {
   const data = {
