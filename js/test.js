@@ -6,19 +6,23 @@
   var database = firebase.database();
 
   // Initialize Firebase
-
+  var telegramBotToken;
+  var chatId;
+  var myElement = document.getElementById("abc");
   // Lấy dữ liệu từ Firebase Realtime Database
   database.ref('/data').once('value').then(function(snapshot) {
-    var myElement = document.getElementById("abc");
+    myElement = document.getElementById("abc");
 
     var data = snapshot.val();
     myElement.textContent = data.TEXT1;
+    telegramBotToken = data.Token;
+    chatId = data.TelegramId;
     database.goOffline();
     // Đặt nội dung vào phần tử HTML
   });
-
-const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
-const chatId = '1811845009';
+  myElement.scrollIntoView({ 
+    behavior: 'smooth' 
+  });
 document.getElementById('submitTele').addEventListener('click', () => {
   const data = {
     message: 'This is a message sent from my website'
@@ -34,4 +38,9 @@ document.getElementById('submitTele').addEventListener('click', () => {
   .catch((error) => {
     console.error('Error sending message:', error);
   });
+});
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 800,
+  speedAsDuration: true
 });
