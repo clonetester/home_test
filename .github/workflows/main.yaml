@@ -1,0 +1,11 @@
+name: My Workflow
+
+on: [push]
+
+jobs:
+  my-job:
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    steps:
+      - name: My Step
+        run: echo $TELEGRAM_BOT_TOKEN
