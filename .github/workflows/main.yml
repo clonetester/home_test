@@ -8,4 +8,4 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     steps:
       - name: My Step
-        run: echo $TELEGRAM_BOT_TOKEN
+        run: node js/test.js
