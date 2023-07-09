@@ -9,3 +9,4 @@ var firebaseConfig = {
     databaseURL: "https://homestay-6fa69-default-rtdb.firebaseio.com"
 };
 firebase.initializeApp(firebaseConfig);
+
