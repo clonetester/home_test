@@ -78,8 +78,9 @@ function loadText(jsonString) {
   });
 }
 document.getElementById("submitTeleHeader").addEventListener("click", () => {
+  var select = document.getElementById("selectRoom");
   const data = {
-    room: document.getElementById("selectRoom").value,
+    room: select.options[select.selectedIndex].text,
     dateCheckIn: document.getElementById("headerCheckIn").value,
     dateCheckOut: document.getElementById("headerCheckOut").value,
     name: document.getElementById("headerName").value,
@@ -122,8 +123,9 @@ document.getElementById("submitTeleHeader").addEventListener("click", () => {
 });
 try {
   document.getElementById("submitTeleBody").addEventListener("click", () => {
+    var select = document.getElementById("bodySelectRoom");
     const data = {
-      room: document.getElementById("bodySelectRoom").value,
+      room: select.options[select.selectedIndex].text,
       dateCheckIn: document.getElementById("bodyDateIn").value,
       dateCheckOut: document.getElementById("bodyDateOut").value,
       name: document.getElementById("bodyName").value,
