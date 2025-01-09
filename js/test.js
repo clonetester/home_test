@@ -93,7 +93,7 @@ document.getElementById("submitTeleHeader").addEventListener("click", () => {
     data.name == "" ||
     data.phone == ""
   ) {
-    alert("Dặt chỗ thất bại. Vui lòng điền đầy đủ thông tin!");
+    alert("Xin chân thành xin lỗi, chúng tôi tạm dừng nhận booking qua web. Hãy liên hệ đặt phòng qua Zalo 0779999935 bạn nhé.");
     return;
   }
 
@@ -113,11 +113,11 @@ document.getElementById("submitTeleHeader").addEventListener("click", () => {
         data.phone,
     })
     .then((response) => {
-      alert("Đặt chỗ thành công.");
+      alert("Xin chân thành xin lỗi, chúng tôi tạm dừng nhận booking qua web. Hãy liên hệ đặt phòng qua Zalo 0779999935 bạn nhé.");
     })
     .catch((error) => {
       alert(
-        "Đặt chỗ thất bại. Hãy liên hệ chúng tôi theo số điện thoại để tiếp tục."
+        "Xin chân thành xin lỗi, chúng tôi tạm dừng nhận booking qua web. Hãy liên hệ đặt phòng qua Zalo 0779999935 bạn nhé."
       );
     });
 });
@@ -139,7 +139,7 @@ try {
       data.name == "" ||
       data.phone == ""
     ) {
-      alert("Đặt chỗ thất bại. Vui lòng điền đầy đủ thông tin!");
+      alert("Xin chân thành xin lỗi, chúng tôi tạm dừng nhận booking qua web. Hãy liên hệ đặt phòng qua Zalo 0779999935 bạn nhé.");
       return;
     }
 
@@ -159,11 +159,11 @@ try {
           data.phone,
       })
       .then((response) => {
-        alert("Đặt chỗ thành công.");
+        alert("Xin chân thành xin lỗi, chúng tôi tạm dừng nhận booking qua web. Hãy liên hệ đặt phòng qua Zalo 0779999935 bạn nhé.");
       })
       .catch((error) => {
         alert(
-          "Đặt chỗ thất bại. Hãy liên hệ chúng tôi theo số điện thoại để tiếp tục."
+          "Xin chân thành xin lỗi, chúng tôi tạm dừng nhận booking qua web. Hãy liên hệ đặt phòng qua Zalo 0779999935 bạn nhé."
         );
       });
   });
