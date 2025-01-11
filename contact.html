@@ -1,292 +1,230 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
     <title>Mộc Nhiên Homestay</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link rel="icon" href="img/core-img/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-compat.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.min.js"></script>
-
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-     <!-- Topbar Start -->
-     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="cssload-container">
+            <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="palatin-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="palatinNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="rooms.html">Rooms</a></li>
+                                    <li class="active"><a href="contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Button -->
+                                <div class="menu-btn">
+                                    <a href="https://zalo.me/0779999935" class="btn palatin-btn">Reserve via Zalo</a>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/bg-8.jpg);">
+        <div class="bradcumbContent">
+            <h2>Contact</h2>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Book Now Area Start ##### -->
+    <div class="book-now-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="book-now-form">
+                        <form action="https://zalo.me/0779999935">
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select1">Check In</label>
+                                <select class="form-control" id="select1">
+                                  <option>Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select2">Check Out</label>
+                                <select class="form-control" id="select2">
+                                  <option>Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select3">Adults</label>
+                                <select class="form-control" id="select3">
+                                  <option>xx</option>
+                                </select>
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="select4">Childrens</label>
+                                <select class="form-control" id="select4">
+                                  <option>xx</option>
+                                </select>
+                            </div>
+
+                            <!-- Button -->
+                            <button type="submit">Chat to Book</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-information-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i><span class="email">@gmail.com</span></p>
-                        <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i><span  class="phone"></span></p>
+
+                <!-- Single Contact Information -->
+                <div class="col-12 col-lg-4">
+                    <div class="single-contact-information mb-600">
+                        <div class="section-text">
+                            <h3>Đồng Tháp</h3>
+                            <p>Welcome to Mộc Nhiên Homestay, a peaceful retreat nestled in the heart of Sa Dec Flower Village. We offer a serene and comfortable stay for guests who want to escape the hustle and bustle of the city.</p>
+                        </div>
+                        <!-- Single Contact Information -->
+                        <div class="contact-content d-flex">
+                            <p>Address</p>
+                            <p>Kế 186b Trần Khánh Dư, phường Tân Quy Đông, TP.Sa Đéc, Đồng Tháp 81800, Việt Nam</p>
+                        </div>
+                        <!-- Single Contact Information -->
+                        <div class="contact-content d-flex">
+                            <p>Phone</p>
+                            <p>077 9999 935</p>
+                        </div>
+                        <!-- Single Contact Information -->
+                        <div class="contact-content d-flex">
+                            <p>E-mail</p>
+                            <p>homestaymocnhien@gmail.com</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3 facebook" href="https://www.facebook.com/">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a id="twitter" class="text-primary px-3 twitter" href="https://twitter.com/?lang=vi">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a id="tiktok" class="text-primary px-3 tiktok" href="https://twitter.com/?lang=vi">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a id="instagram" class="text-primary px-3 instagram" href="https://www.instagram.com/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a id="youtube" class="text-primary pl-3 youtube" href="https://www.youtube.com/">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+
+
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+    </section>
+    <!-- ##### Contact Area End ##### -->
 
-
-     <!-- Navbar Start -->
-     <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-brown">Mộc<span class="text-primary">Nhiên</span></h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Trang chủ</a>
-                        <a href="about.html" class="nav-item nav-link">Tổng quan</a>
-                        <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
-                        <a href="package.html" class="nav-item nav-link">Phòng</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Giới thiệu</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="destination.html" class="dropdown-item">Điểm đến</a>
-                                <a href="guide.html" class="dropdown-item">Nhân viên</a>
-                                <a href="testimonial.html" class="dropdown-item">Bình luận của khách hàng</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link active">Liên lạc</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid page-header">
+    <!-- ##### Google Maps ##### -->
+    <div class="map-area mb-100">
         <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Liên hệ</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Trang chủ</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Liên hệ</p>
+            <div class="row">
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.1578435677543!2d105.73481071145594!3d10.3292502672385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a7d5be7361f67%3A0x147a37efc3b30b09!2zTeG7mWMgTmhpw6puIEhvbWVzdGF5!5e0!3m2!1svi!2s!4v1692539434521!5m2!1svi!2s" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
 
-    <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-2-5">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" id="selectRoom" style="height: 49px;">
-                                        <option selected>Loại phòng</option>
-                                        <option value="Phòng 1" class="idRoom1">Phòng 1</option>
-                                        <option value="Phòng 2" class="idRoom2">Phòng 2</option>
-                                        <option value="Phòng 3" class="idRoom3">Phòng 3</option>
-                                        <option value="Phòng 4" class="idRoom4">Phòng 4</option>
-                                        <option value="Phòng 5" class="idRoom5">Phòng 5</option>
-                                        <option value="Phòng 6" class="idRoom6">Phòng 6</option>
-                                        <option value="Khác">Khác</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2-5">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="dateHeaderCheckIn" data-target-input="nearest" style="height: 47px;">
-                                        <input type="text"  id="headerCheckIn" class="form-control p-4 datetimepicker-input"
-                                            placeholder="Ngày checkin" data-target="#dateHeaderCheckIn"
-                                            data-toggle="datetimepicker" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2-5">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="dateHeaderCheckOut" data-target-input="nearest" style="height: 47px;">
-                                        <input type="text" id="headerCheckOut" class="form-control p-4 datetimepicker-input"
-                                            placeholder="Ngày checkout" data-target="#dateHeaderCheckOut"
-                                            data-toggle="datetimepicker" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2-5">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="text" id="headerName" required="required" class="form-control p-4 datetimepicker-input"
-                                            placeholder="Tên khách"/>
-                                </div>
-                            </div>
-                            <div class="col-md-2-5">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="number" id="headerPhone" required="required" class="form-control p-4 datetimepicker-input"
-                                            placeholder="Số điện thoại"/>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-lg-5">
+                    <div class="footer-widget-area mt-50">
+                        <a href="#top" class="d-block mb-5"><img src="img/core-img/logo.png" alt=""></a>
+                        <p>Welcome to Mộc Nhiên Homestay, a peaceful retreat nestled in the heart of Sa Dec Flower Village. We offer a serene and comfortable stay for guests who want to escape the hustle and bustle of the city.</p>
                     </div>
-                    <div class="col-md-2"><a href="https://zalo.me/0779999935">
-                        <button id="submitTeleHeader" name="submitTele" class="btn btn-primary btn-block submitTele" type="submit"
-                            style="height: 47px; margin-top: -2px;">Liên hệ ngay</button></a>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-widget-area mt-50">
+                        <a href="#top" class="d-block mb-5"><img src="img/core-img/logo.png" alt="" style="visibility: hidden;"></a>
+                        <p>Chào mừng bạn đến với Mộc Nhiên Homestay, một chốn nghỉ yên bình nằm ngay trong lòng Làng Hoa Sa Đéc. Chúng tôi mang đến một kỳ nghỉ thư giãn và thoải mái cho những ai muốn tách mình khỏi nhịp sống hối hả của đô thị.</p>
+                    </div>
+                </div>
+
+                <!-- Copywrite Text -->
+                <div class="col-12">
+                    <div class="copywrite-text mt-30">
+                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Booking End -->
+    </footer>
+    <!-- ##### Footer Area End ##### -->
 
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact</h6>
-                <h1>Contact For Any Query</h1>
-            </div>
-            <div class="row justify-content-center wow fadeIn" data-wow-delay="0.1s" style="padding-bottom: 13px;">
-                <iframe class="position-relative rounded w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.1578435677543!2d105.73481071145594!3d10.3292502672385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a7d5be7361f67%3A0x147a37efc3b30b09!2zTeG7mWMgTmhpw6puIEhvbWVzdGF5!5e0!3m2!1svi!2s!4v1692539434521!5m2!1svi!2s"
-                    frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-    <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-            <a href="" class="navbar-brand">
-                <h1 class="text-primary">Mộc<span class="text-white">Nhiên</span></h1>
-            </a>
-            <p class="footerContent">Được khai trường vào ngày 30/4/2023. Chúng tôi cam kết sẽ dùng mọi nỗ lực để làm hài lòng tất cả khách hàng ghé thăm và tin tưởng sử dụng dịch vụ của chúng tôi</p>
-            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
-            <div class="d-flex justify-content-start">
-                <a class="btn btn-outline-primary btn-square mr-2 twitter" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2 facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2 youtube" href="#"><i class="fab fa-youtube"></i></a>
-                <a class="btn btn-outline-primary btn-square mr-2 instagram" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-primary btn-square tiktok" href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Tổng quan</a>
-                <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Điểm đến</a>
-                <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Dịch vụ</a>
-                <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Phòng</a>
-                <a class="text-white-50 mb-2" href="guide.html"><i class="fa fa-angle-right mr-2"></i>Nhân viên</a>
-                <a class="text-white-50 mb-2" href="testimonial.html"><i class="fa fa-angle-right mr-2"></i>Đánh giá</a>
-                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Liên hệ</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-            <div class="d-flex flex-column justify-content-start">
-                <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Tổng quan</a>
-                <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Điểm đến</a>
-                <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Dịch vụ</a>
-                <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Phòng</a>
-                <a class="text-white-50 mb-2" href="guide.html"><i class="fa fa-angle-right mr-2"></i>Nhân viên</a>
-                <a class="text-white-50 mb-2" href="testimonial.html"><i class="fa fa-angle-right mr-2"></i>Đánh giá</a>
-                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Liên hệ</a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-            <p><i class="fa fa-map-marker-alt mr-2"></i><span class="address"> Street, New York, USA</span></p>
-            <p><i class="fa fa-phone-alt mr-2"></i><span class="phone">+012 345 67890</span></p>
-            <p><i class="fa fa-envelope mr-2"></i><span class ="email">@example.com</span></p>
-        </div>
-    </div>
-</div>
-<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-    style="border-color: rgba(256, 256, 256, .1) !important;">
-    <div class="row">
-        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
-            </p>
-        </div>
-        <div class="col-lg-6 text-center text-md-right">
-            <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/test.js"></script>
-
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 </body>
 
 </html>
